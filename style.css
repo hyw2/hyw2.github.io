@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Yatramanav');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.intro{
+  height:100%;
+  width: 100%;
+  margin: auto;
+  background-color: #000080;
+  display: table;
+  top: 0;
+  color: white;
+}
+.intro .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+.content{
+  margin: 0;
+  text-align: center;
+}
+.content h1{
+  font-family: 'Yatramanav', sans-serif;
+  color: #F9F3F4;
+  text-shadow: 0px 0px 300px;
+  font-size: 500%;
+  line-height: 70%;
+  font-weight: 700;
+}
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color:white;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+p{
+  font-size: 160%;
+  line-height: 210%;
+  text-align: justify;
+  margin: 3%;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 768px){
+  .content h1{
+    font-size: 250%;
+  }
+  .btn{
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+  p{
+    font-size: 100%;
+    line-height: 160%;
+  }
+}
