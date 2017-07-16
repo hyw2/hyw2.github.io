@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	$("a").on('click', function(event) {
 
 		// Make sure this.hash has a value before overriding default behavior
@@ -20,10 +21,16 @@ $(document).ready(function() {
 			});
 		} // End if
 	});
-	window.sr=ScrollReveal();
-	sr.reveal('#me', {delay: 500});
-	sr.reveal('#linked', {delay: 750});
-	sr.reveal('#github', {delay: 1000});
-	sr.reveal('#res', {delay: 1250});
-	sr.reveal('#about', {delay: 500});
+
+	var divs = $('.inner');
+    $(window).on('scroll', function() {
+        var st = $(this).scrollTop();
+        divs.css({
+            'margin-top' : -(st/30)+"px",
+            'opacity' : 1 - st/50
+        });
+    });
+
+		window.sr=ScrollReveal();
+		sr.reveal('#about', {delay: 250});
 });

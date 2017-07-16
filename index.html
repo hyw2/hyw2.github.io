@@ -3,45 +3,81 @@
 <head>
   <title>Harry Wang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="css/animate.css" rel="stylesheet"/>
   <link href="css/waypoints.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!--landing page-->
+  <section class="intro" id="start">
+    <div class="inner">
+      <div class="content">
+        <section class="os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0s">
+          <h1>Harry Wang</h1>
+        </section>
+        <p class="container os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.5s">Aspiring programmer, web developer and student.</p>
+        <section class="btns">
+          <a href="https://www.linkedin.com/in/harry-wang-ab1a46145/" class="fa fa-linkedin os-animation" id="linked" data-os-animation="fadeIn" data-os-animation-delay="0.75s"></a>
+          <a href="https://github.com/hyw2" class="fa fa-github os-animation" id="github" data-os-animation="fadeIn" data-os-animation-delay="1s"></a>
+          <a href="Harry Wang Resume.pdf" class="fa fa-file-text-o os-animation" id="res" data-os-animation="fadeIn" data-os-animation-delay="1.25s"></a>
+          <a href="#" class="fa fa-photo os-animation" id="photo" data-os-animation="fadeIn" data-os-animation-delay="1.5s"></a>
+        </section>
+      </div>
+      <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.5s">
+			  <a href="#here" id="discover" class="button">About Me</a>
+      </section>
+    </div>
+  </section>
+
+<!--about me-->
+  <section class="container main" id="about">
+    <h1 id="here">Who am I?</h1>
+    <h3>Everything about me</h3>
+    <img src="images/6.jpg" class="img-circle"  alt="Harry" height="150px" width="auto">
+    <p>Hi, my name is Harry Wang. I was born in Pennsylvania but raised in Hong Kong and I am currently attending Duke University
+    where I am majoring in Computer Science and minoring in Statistics.</p>
+  </section>
+
+<!-- commenting out the typed.js stuff
+  <section>
+    <div id="typed-strings">
+      <p>I am an aspiring <strong>programmer</strong>.</p>
+      <p>I am an aspiring <strong>web developer</strong>.</p>
+      <p>I am an aspiring <strong>student</strong>!
+      </p>
+    </div>
+    <span id="typed"></span>
+  </section>
+-->
+<!--footer-->
+  <section id="footer">
+    <a href="#start" class="fticon fa fa-angle-up"></a>
+    <p>Copyright &copy; 2017 Harry Wang</p>
+  </section>
+<!--scripts-->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
 	<script src="js/waypoints.js" type="text/javascript"></script>
   <script src="js/scripts.js" type="text/javascript"></script>
-  <meta charset="utf-8">
-</head>
-<body>
-  <section class="intro">
-    <div class="inner">
-      <div class="content">
-        <section class="os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0s">
-          <h1>Harry Wang</h1>
-        </section>
-        <section>
-          <a href="#about" class="fa fa-user fa-3x" id="me"></a>
-          <a href="https://www.linkedin.com/in/harry-wang-ab1a46145/" class="fa fa-linkedin fa-3x" id="linked"></a>
-          <a href="https://github.com/hyw2" class="fa fa-github fa-3x" id="github"></a>
-          <a href="Harry Wang Resume.pdf" class="fa fa-file-text-o fa-3x" id="res"></a>
-        </section>
-      </div>
-    </div>
-  </section>
-
-  <p class="me" id="about">
-    FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL FILL
-    FILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILL
-    FILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILL
-    FILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILL
-    FILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILL
-    FILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILL
-    FILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILLFILL FILL FILL FILL FILL FILL FILL FILL FILL
-  </p>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+    var typed= new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 40,
+      startDelay: 750,
+      backDelay: 500,
+      backSpeed: 40,
+      showCursor: false
+    });
+  </script>
 </body>
 </html>
