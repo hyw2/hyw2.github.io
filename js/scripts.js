@@ -33,4 +33,26 @@ $(document).ready(function() {
 
 		window.sr=ScrollReveal();
 		sr.reveal('#about', {delay: 250});
+		sr.reveal('#proj', {delay:250});
+		sr.reveal('#tf', {delay:500});
+		sr.reveal('#fuse', {delay:750});
+		sr.reveal('#huff', {delay:1000});
+
+
+
+		var oTop = $('#counter').offset().top - window.innerHeight;
+    $(window).scroll(function(){
+
+        var pTop = $('body').scrollTop();
+        if( pTop > oTop ){
+            start_count();
+        }
+    });
 });
+function start_count(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+}

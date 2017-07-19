@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Harry Wang</title>
+  <title>Harry Wang | Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/animate.css" rel="stylesheet"/>
   <link href="css/waypoints.css" rel="stylesheet"/>
@@ -26,7 +26,7 @@
           <a href="https://www.linkedin.com/in/harry-wang-ab1a46145/" class="fa fa-linkedin os-animation" id="linked" data-os-animation="fadeIn" data-os-animation-delay="0.75s"></a>
           <a href="https://github.com/hyw2" class="fa fa-github os-animation" id="github" data-os-animation="fadeIn" data-os-animation-delay="1s"></a>
           <a href="Harry Wang Resume.pdf" class="fa fa-file-text-o os-animation" id="res" data-os-animation="fadeIn" data-os-animation-delay="1.25s"></a>
-          <a href="#" class="fa fa-photo os-animation" id="photo" data-os-animation="fadeIn" data-os-animation-delay="1.5s"></a>
+          <a href="#" class="fa fa-photo os-animation extra" id="photo" data-os-animation="fadeIn" data-os-animation-delay="1.5s"></a>
         </section>
       </div>
       <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="1.5s">
@@ -38,28 +38,110 @@
 <!--about me-->
   <section class="container main" id="about">
     <h1 id="here">Who am I?</h1>
-    <h3>Everything about me</h3>
-    <img src="images/6.jpg" class="img-circle"  alt="Harry" height="150px" width="auto">
-    <p>Hi, my name is Harry Wang. I was born in Pennsylvania but raised in Hong Kong and I am currently attending Duke University
-    where I am majoring in Computer Science and minoring in Statistics.</p>
+    <section class="type">
+      <div id="typed-strings">
+        <p>I am an aspiring <strong>programmer</strong>.</p>
+        <p>I am an aspiring <strong>web developer</strong>.</p>
+        <p>I am an aspiring <strong>student</strong>!
+        </p>
+      </div>
+      <span id="typed"></span>
+    </section>
+    <img src="images/6.jpg" class="img-circle" alt="Harry" height="150px" width="auto">
+    <div class="row">
+      <div class="col-sm-6 fluid">
+        <h3>Everything about me</h3>
+        <p>Hi, my name is Harry Wang. I was born in Pennsylvania but raised in Hong Kong.
+          I am currently attending Duke University where I am majoring in Computer Science
+          and minoring in Statistics.<br>
+          I'm fascinated by power and potential of computing, and as I progress through my studies
+          I hope to learn more about the impact of machine learning as well as the effect of the blockchain.
+          I'm always looking for something new to learn and what's currently on my to learn list is Golang!<br>
+          These are some of the courses that I have already taken: Data Structures and Algorithms (CS201),
+          Discrete Mathematics (CS230), Computer Architecture (CS250), Probability and Statistics (STA111), and
+          Multivariable Calculus (MA212).<br>
+          Apart from my academics, I am an avid sports fan. Basketball will forever be my first love and you
+          could definitely catch me at shooting hoops at the gym, catching the Duke game, or even managing my
+          fantasy draft team. Go Blue Devils!
+        </p>
+      </div>
+      <div class="col-sm-6 prog" id="counter">
+        <h3>Developmental Skills</h3>
+        <div class="skillbar clearfix " data-percent="75%">
+				  <div class="skillbar-title" style="background: #936edd;"><span>Java</span></div>
+				  <div class="skillbar-bar" style="background: #936edd;"></div>
+				</div>
+        <div class="skillbar clearfix " data-percent="65%">
+				  <div class="skillbar-title" style="background: #601fe2;"><span>Python</span></div>
+					<div class="skillbar-bar" style="background: #601fe2;"></div>
+				</div>
+        <div class="skillbar clearfix " data-percent="60%">
+          <div class="skillbar-title" style="background: #1502e8;"><span>Javascript</span></div>
+        	<div class="skillbar-bar" style="background: #1502e8;"></div>
+        </div>
+        <div class="skillbar clearfix " data-percent="85%">
+        	<div class="skillbar-title" style="background: #1e73db;"><span>HTML5</span></div>
+        	<div class="skillbar-bar" style="background: #1e73db;"></div>
+        </div>
+        <div class="skillbar clearfix " data-percent="70%">
+          <div class="skillbar-title" style="background: #1e95db;"><span>CSS3</span></div>
+        	<div class="skillbar-bar" style="background: #1e95db;"></div>
+        </div>
+        <div class="skillbar clearfix " data-percent="65%">
+          <div class="skillbar-title" style="background: #1ecbdb;"><span>PHP</span></div>
+        	<div class="skillbar-bar" style="background: #1ecbdb;"></div>
+        </div>
+        <div class="skillbar clearfix " data-percent="50%">
+          <div class="skillbar-title" style="background: #1edbb8;"><span>C</span></div>
+        	<div class="skillbar-bar" style="background: #1edbb8;"></div>
+        </div>
+        <div class="skillbar clearfix " data-percent="40%">
+          <div class="skillbar-title" style="background: #dbd71e;"><span>GoLang</span></div>
+        	<div class="skillbar-bar" style="background: #dbd71e;"></div>
+        </div>
+      </div>
+    </div>
   </section>
 
-<!-- commenting out the typed.js stuff
-  <section>
-    <div id="typed-strings">
-      <p>I am an aspiring <strong>programmer</strong>.</p>
-      <p>I am an aspiring <strong>web developer</strong>.</p>
-      <p>I am an aspiring <strong>student</strong>!
-      </p>
+  <section class="container main projects">
+    <div id="proj">
+      <h1>Projects</h1>
+      <h3>My little bits and pieces</h3>
     </div>
-    <span id="typed"></span>
+    <div class="row">
+      <div class="col-sm-4" id="tf">
+        <a outline=none href="https://github.com/hyw2/Emotion-Recognition-using-TensorFlow" class="tnail">
+          <img src="images/tf.png" alt="tensorflow" class="thumb"></a>
+        <h3>Emotion Recognition with Tensor-Flow</h3>
+        <p>A small application built using TensorFlow and using Docker as the environment. It is trained off two categories: "Happy" and "Frown".
+          It is built off training the final layer of Inception (Google's own machine-learning
+          image classifier) on these two categories.</p>
+      </div>
+      <div class="col-sm-4" id="fuse">
+        <a outline=none href="https://github.com/hyw2/Emotion-Recognition-using-TensorFlow" class="tnail">
+          <img src="images/fuse.png" alt="tensorflow" class="thumb"></a>
+        <h3>Filespace Usersystem</h3>
+        <p>A simple application that allows you to create a mounted folder where you can read/write files to.
+          The future applications for this is to turn it into something similar to Webdav but using a different
+          transport protocol than HTTP/1.1.</p>
+      </div>
+      <div class="col-sm-4" id="huff">
+        <a outline=none href="https://github.com/hyw2/Huffman-Compression" class="tnail">
+          <img src="images/hufftree.png" alt="tensorflow" class="thumb"></a>
+        <h3>Huffman Compression</h3>
+        <p>A small Java application that compresses and decompresses through Huffman trees.</p>
+      </div>
+    </div>
+
+
   </section>
--->
+
 <!--footer-->
   <section id="footer">
     <a href="#start" class="fticon fa fa-angle-up"></a>
     <p>Copyright &copy; 2017 Harry Wang</p>
   </section>
+
 <!--scripts-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
