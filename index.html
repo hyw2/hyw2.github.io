@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/animate.css" rel="stylesheet"/>
   <link href="css/waypoints.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+    	jQuery('.skillbar').each(function(){
+    		jQuery(this).find('.skillbar-bar').animate({
+    			width:jQuery(this).attr('data-percent')
+    		},6000);
+    	});
+    });
+  </script>
   <meta charset="utf-8">
 </head>
 
@@ -58,9 +67,9 @@
           I'm fascinated by the power and potential of computing, and as I progress through my studies
           I hope to learn more about the impact of machine learning as well as the effect of the blockchain.
           I'm always looking for something new to learn and what's currently on my to learn list is Golang!<br>
-          These are some of the courses that I have already taken: Data Structures and Algorithms (CS201),
-          Discrete Mathematics (CS230), Computer Architecture (CS250), Probability and Statistics (STA111), and
-          Multivariable Calculus (MA212).<br>
+          These are some of the courses that I have already taken: Machine Learning (CS671), Design and Analysis
+          of Algorithms (CS330), Statistical Consulting (STA440), Software Design (CS308), Data Mining and ML (STA325),
+          Operating Systems (CS310), Bayesian Methods & Modern Stats (STA360).<br>
           Apart from my academics, I am an avid sports fan. Basketball will forever be my first love and you
           could definitely catch me at shooting hoops at the gym, watching the Duke game, or managing my
           fantasy draft team. Go Blue Devils!
@@ -68,25 +77,25 @@
       </div>
       <div class="col-sm-6 prog" id="counter">
         <h3>Developmental Skills</h3>
-        <div class="skillbar clearfix " data-percent="65%">
-				  <div class="skillbar-title" style="background: #936edd;"><span>Java</span></div>
-				  <div class="skillbar-bar" style="background: #936edd;"></div>
-				</div>
-        <div class="skillbar clearfix " data-percent="50%">
+        <div class="skillbar clearfix " data-percent="90%">
 				  <div class="skillbar-title" style="background: #601fe2;"><span>Python</span></div>
 					<div class="skillbar-bar" style="background: #601fe2;"></div>
 				</div>
-        <div class="skillbar clearfix " data-percent="60%">
-          <div class="skillbar-title" style="background: #1502e8;"><span>Javascript</span></div>
-        	<div class="skillbar-bar" style="background: #1502e8;"></div>
-        </div>
-        <div class="skillbar clearfix " data-percent="75%">
-        	<div class="skillbar-title" style="background: #1e73db;"><span>HTML5</span></div>
+        <div class="skillbar clearfix " data-percent="85%">
+        	<div class="skillbar-title" style="background: #1e73db;"><span>R</span></div>
         	<div class="skillbar-bar" style="background: #1e73db;"></div>
         </div>
-        <div class="skillbar clearfix " data-percent="70%">
-          <div class="skillbar-title" style="background: #1e95db;"><span>CSS3</span></div>
+        <div class="skillbar clearfix " data-percent="80%">
+          <div class="skillbar-title" style="background: #1e95db;"><span>ML</span></div>
         	<div class="skillbar-bar" style="background: #1e95db;"></div>
+        </div>
+        <div class="skillbar clearfix " data-percent="70%">
+          <div class="skillbar-title" style="background: #936edd;"><span>Java</span></div>
+          <div class="skillbar-bar" style="background: #936edd;"></div>
+        </div>
+        <div class="skillbar clearfix " data-percent="60%">
+          <div class="skillbar-title" style="background: #1502e8;"><span>Javascript</span></div>
+          <div class="skillbar-bar" style="background: #1502e8;"></div>
         </div>
         <div class="skillbar clearfix " data-percent="65%">
           <div class="skillbar-title" style="background: #1ecbdb;"><span>PHP</span></div>
